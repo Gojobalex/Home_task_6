@@ -20,7 +20,6 @@ public class LambdaStep {
             open(BASE_URL);
         });
         step("Search repository" + REPOSITIRY, () -> {
-            $(".header-search-input").click();
             $(".header-search-input").setValue("allure").pressEnter();
         });
         step("Open repository" + REPOSITIRY,(s) -> {
